@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20191121 12:10:54.036" rpa="false">
+<suite id="s1" name="Testsuit" source="D:\paython\paython_workspace\testsuit">
+<suite id="s1-s1" name="Test22" source="D:\paython\paython_workspace\testsuit\test22.robot">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>hello setup</arg>
+</arguments>
+<msg timestamp="20191121 12:10:59.785" level="INFO">hello setup</msg>
+<status status="PASS" starttime="20191121 12:10:59.784" endtime="20191121 12:10:59.785"></status>
+</kw>
+<test id="s1-s1-t1" name="MyFirstTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>HEllo world.</arg>
+</arguments>
+<msg timestamp="20191121 12:10:59.786" level="INFO">HEllo world.</msg>
+<status status="PASS" starttime="20191121 12:10:59.786" endtime="20191121 12:10:59.786"></status>
+</kw>
+<status status="PASS" starttime="20191121 12:10:59.785" endtime="20191121 12:10:59.786" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="FirstseleniumTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://google.com</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20191121 12:10:59.788" level="INFO">Opening browser 'Chrome' to base url 'https://google.com'.</msg>
+<status status="PASS" starttime="20191121 12:10:59.788" endtime="20191121 12:11:31.770"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20191121 12:11:31.771" endtime="20191121 12:11:31.774"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>infodart technologies</arg>
+</arguments>
+<msg timestamp="20191121 12:11:31.776" level="INFO">Typing text 'infodart technologies' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20191121 12:11:31.775" endtime="20191121 12:11:31.955"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20191121 12:11:31.956" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20191121 12:11:31.963" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20191121 12:11:31.955" endtime="20191121 12:11:42.083"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20191121 12:11:42.084" endtime="20191121 12:11:44.743"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>test commpleted</arg>
+</arguments>
+<msg timestamp="20191121 12:11:44.745" level="INFO">test commpleted</msg>
+<status status="PASS" starttime="20191121 12:11:44.744" endtime="20191121 12:11:44.746"></status>
+</kw>
+<status status="PASS" starttime="20191121 12:10:59.787" endtime="20191121 12:11:44.746" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="SampleLoginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://14.141.50.214:9031/grocery-test/public/login</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20191121 12:11:44.750" level="INFO">Opening browser 'Chrome' to base url 'http://14.141.50.214:9031/grocery-test/public/login'.</msg>
+<status status="PASS" starttime="20191121 12:11:44.749" endtime="20191121 12:12:04.633"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20191121 12:12:04.634" endtime="20191121 12:12:04.635"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=email</arg>
+<arg>lavi.jain@infodartmail.com</arg>
+</arguments>
+<msg timestamp="20191121 12:12:04.636" level="INFO">Typing text 'lavi.jain@infodartmail.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20191121 12:12:04.636" endtime="20191121 12:12:04.786"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>admin@1234</arg>
+</arguments>
+<msg timestamp="20191121 12:12:04.786" level="INFO">Typing password into text field 'name=password'.</msg>
+<status status="PASS" starttime="20191121 12:12:04.786" endtime="20191121 12:12:04.886"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20191121 12:12:04.887" level="INFO">Sending key(s) ('ENTER',) to name=password element.</msg>
+<msg timestamp="20191121 12:12:04.897" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20191121 12:12:04.887" endtime="20191121 12:12:10.426"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>test completed</arg>
+</arguments>
+<msg timestamp="20191121 12:12:10.427" level="INFO">test completed</msg>
+<status status="PASS" starttime="20191121 12:12:10.426" endtime="20191121 12:12:10.427"></status>
+</kw>
+<doc>THIS is simple login functionality</doc>
+<status status="PASS" starttime="20191121 12:11:44.747" endtime="20191121 12:12:10.427" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191121 12:10:54.685" endtime="20191121 12:12:10.428"></status>
+</suite>
+<status status="PASS" starttime="20191121 12:10:54.641" endtime="20191121 12:12:10.432"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="Testsuit">Testsuit</stat>
+<stat pass="3" fail="0" id="s1-s1" name="Test22">Testsuit.Test22</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
